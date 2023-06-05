@@ -1,6 +1,6 @@
 # Telekinator
 
-![Telekinator](/img.jpg)
+![Telekinator](/Imatges/ResultatsFinals/Final1.jpg)
 
 ## Continguts
 - [Introducció](#introducció)
@@ -8,13 +8,17 @@
 - [Components](#components)
 - [Esquema Hardware](#esquema-hardware)
 - [Esquema Software](#esquema-software)
+- [Resultats finals](#resultats-finals)
 ### Accessos ràpids
 - [Models](/Models)
 - [Codi](/codi)
   - [Local](/codi/local)
   - [Maquina Virtual](/codi/maquinaVirtual)
   - [Raspberry](/codi/raspberry)
-- [Imatges](/imatges)
+- [Imatges](/Imatges)
+  - [Esquemes](/Imatges/Esquemes)
+  - [Models](Imatges/Models)
+  - [Resultats Finals](/Imatges/ResultatsFinals)
 - [Documentacio](/documentacio)
 
 ## Introducció
@@ -42,7 +46,7 @@ Les llibreries necessàries per aquest projecte son:
 -	1 Batería 5V
 -	1 Cable batería
 ## Esquema Hardware
-<!-- Esquema Hardware -->
+![EsquemaHardware](/Imatges/Esquemes/EsquemaHardware.png)
 - Portapiles i 4 piles de 1,5V connectats al positiu (VCC) i negatiu (GND) de la controladora L298N
 - GND de la controladora connectat a un GND de la raspberry.
 - 2 motors connectats en paral·lel a les sortides out1 i out2 de la controladora.
@@ -51,9 +55,13 @@ Les llibreries necessàries per aquest projecte son:
 - Pins de trigger i echo del sensor d’ultrasons (hc-sr04) connectats als pins GPIO 5 i 18 de la raspberry respectivament.
 - Pins de GND i VCC del sensor d’ultrasons connectats a un pin de GND i VCC de la raspberry.
 ## Esquema Software
-<!-- Esquema Software -->
+![EsquemaSoftware](/Imatges/Esquemes/Esquema-Software.png)
 - Mòdul Eye-tracker: Aquest mòdul és l’encarregat de reconèixer l’acció que ha de fer el cotxe segons el moviment ocular. Primer, el que es rep per la càmera es puja al Google Cloud Storage, després, dins d’una màquina virtual de Google, descarreguem l’últim frame pujat y utilitzem una funció eyetracker que farà el reconeixement facial del frame, reconeixerà la posició dels ulls, també la direcció de la mirada, interpretarà la direcció i la convertirà en l’acció que farà el cotxe teledirigit, la qual la pujarà al Cloud Storage.
 
 - Mòdul Sensor: Aquest mòdul es l’encarregat de evitar les col·lisions del cotxe amb l’entorn. Primer es rep el que capta en sensor, després es reconeix la distància que separa el cotxe de l’obstacle i es fa una interpretació per donar una acció al cotxe.
 
 - Mòdul Acció: Aquest mòdul és l’encarregat de fer que el cotxe faci l’acció donada. Primer, es fixa en l’ordre enviat per el mòdul sensor, si l’ordre es parar-se a causa d’un obstacle, el cotxe es pararà y no farà res més, però en cas contrari, es descarregarà l’acció de enviada pel mòdul Eye-tracker y el cotxe farà l’acció donada.
+## Resultats finals
+![Telekinator1](/Imatges/ResultatsFinals/Final1.jpg)
+![Telekinator2](/Imatges/ResultatsFinals/Final2.jpg)
+<!-- ![TelekinatorDEMO](https://youtu.be/ZdBP9RJG0WA) -->
