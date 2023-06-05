@@ -9,6 +9,7 @@
 - [Esquema Hardware](#esquema-hardware)
 - [Esquema Software](#esquema-software)
 - [Resultats finals](#resultats-finals)
+  - [Vídeo demo](#vídeo-demo)
 ### Accessos ràpids
 - [Models](/Models)
 - [Codi](/codi)
@@ -55,7 +56,7 @@ Les llibreries necessàries per aquest projecte son:
 - Pins de trigger i echo del sensor d’ultrasons (hc-sr04) connectats als pins GPIO 5 i 18 de la raspberry respectivament.
 - Pins de GND i VCC del sensor d’ultrasons connectats a un pin de GND i VCC de la raspberry.
 ## Esquema Software
-![EsquemaSoftware](/Imatges/Esquemes/Esquema-Software.png)
+![EsquemaSoftware](/Imatges/Esquemes/EsquemaSoftware.png)
 - Mòdul Eye-tracker: Aquest mòdul és l’encarregat de reconèixer l’acció que ha de fer el cotxe segons el moviment ocular. Primer, el que es rep per la càmera es puja al Google Cloud Storage, després, dins d’una màquina virtual de Google, descarreguem l’últim frame pujat y utilitzem una funció eyetracker que farà el reconeixement facial del frame, reconeixerà la posició dels ulls, també la direcció de la mirada, interpretarà la direcció i la convertirà en l’acció que farà el cotxe teledirigit, la qual la pujarà al Cloud Storage.
 
 - Mòdul Sensor: Aquest mòdul es l’encarregat de evitar les col·lisions del cotxe amb l’entorn. Primer es rep el que capta en sensor, després es reconeix la distància que separa el cotxe de l’obstacle i es fa una interpretació per donar una acció al cotxe.
@@ -64,4 +65,5 @@ Les llibreries necessàries per aquest projecte son:
 ## Resultats finals
 ![Telekinator1](/Imatges/ResultatsFinals/Final1.jpg)
 ![Telekinator2](/Imatges/ResultatsFinals/Final2.jpg)
-<!-- ![TelekinatorDEMO](https://youtu.be/ZdBP9RJG0WA) -->
+### Vídeo demo
+[![Vídeo demo](https://img.youtube.com/vi/ZdBP9RJG0WA/0.jpg)](https://youtube.com/watch?v=ZdBP9RJG0WA)
