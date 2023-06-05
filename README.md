@@ -10,6 +10,7 @@
 - [Esquema Software](#esquema-software)
 - [Resultats finals](#resultats-finals)
   - [Vídeo demo](#vídeo-demo)
+- [Autors](#autors)
 ### Accessos ràpids
 - [Models](/Models)
 - [Codi](/codi)
@@ -67,3 +68,10 @@ Les llibreries necessàries per aquest projecte son:
 ![Telekinator2](/Imatges/ResultatsFinals/Final2.jpg)
 ### Vídeo demo
 [![Vídeo demo](https://img.youtube.com/vi/ZdBP9RJG0WA/0.jpg)](https://youtube.com/watch?v=ZdBP9RJG0WA)
+
+## Autors
+Raul Ochoa
+
+Jheremmy Matienzo
+
+Oriol Cano
