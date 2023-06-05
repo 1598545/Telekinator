@@ -8,6 +8,7 @@
 - [Components](#components)
 - [Esquema Hardware](#esquema-hardware)
 - [Esquema Software](#esquema-software)
+### Accessos ràpids
 - [Models](/Models)
 - [Codi](/codi)
   - [Local](/codi/local)
